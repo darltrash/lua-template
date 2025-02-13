@@ -1,5 +1,7 @@
 local template = require "template"
 
+local arg = { ... }
+
 local i = 1
 local minify = false
 while i <= #arg do
