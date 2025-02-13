@@ -1,18 +1,18 @@
 lua-template
 ============
 
-The simplest Lua HTML template engine in just a few lines of code
+The simplest Lua HTML template engine in just a few lines of code, now for Luvit!
 
 Installation
 ------------
 
-`luarocks install template`
+`lit install darltrash/template`
 
 Compiling templates
 -------------------
 Templates can be compiled by either running
 
-`templatec template.tpl -o template.lua`
+`template template.tpl -o template.lua`
 
 nor by passing a string to  `template.compile`.
 
@@ -35,7 +35,7 @@ In short, Lua expressions must be included between percent signs and Lua stateme
 <ul>
 <? for i = 1, 3 do ?>
   <li>item #<%i%></li>
-<? end ?> 
+<? end ?>
 </ul>
 ```
 
@@ -63,4 +63,7 @@ Evaluating templates
 
 Compressing templates
 ---------------------
-`template.compile` has an optional `minify` argument and `templatec` has `-m` option. 
+`template.compile` has an optional `minify` argument and `template` has `-m` option.
+
+### Credits
+Original by Danila Poyarkov! [Thank you!](https://github.com/dannote/lua-template)
